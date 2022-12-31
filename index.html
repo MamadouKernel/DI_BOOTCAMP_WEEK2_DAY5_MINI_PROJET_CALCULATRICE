@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculatrice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center m-4">
+            <div class="border border-2 border-dark" id="calculator">
+                <div class=" border -md- border-2 border-danger" id="display">
+                    <p id="result">0</p>
+                </div>
+                <div id="buttons" class="m-2">
+                    <button class="btn btn-lg btn-dark" type="button" onclick="number(7)">7</button>
+                    <button class="btn btn-lg btn-dark" type="button" onclick="number(8)">8</button>
+                    <button class="btn btn-lg btn-dark" type="button" onclick="number(9)">9</button>
+                    <button class="btn btn-lg btn-dark" type="button" onclick="operator('+')">+</button>
+                    <br>
+                    <button class="btn btn-lg btn-primary my-1" type="button" onclick="number(4)">4</button>
+                    <button class="btn btn-lg btn-primary my-1" type="button" onclick="number(5)">5</button>
+                    <button class="btn btn-lg btn-primary my-1" type="button" onclick="number(6)">6</button>
+                    <button class="btn btn-lg btn-primary my-1" type="button" onclick="operator('-')">-</button>
+                    <br>
+                    <button class="btn btn-lg btn-secondary" type="button" onclick="number(1)">1</button>
+                    <button class="btn btn-lg btn-secondary" type="button" onclick="number(2)">2</button>
+                    <button class="btn btn-lg btn-secondary" type="button" onclick="number(3)">3</button>
+                    <button class="btn btn-lg btn-secondary" type="button" onclick="operator('*')">*</button>
+                    <br>
+                    <button class="btn btn-lg btn-success my-1" type="button" onclick="number(0)">0</button>
+                    <button class="btn btn-lg btn-warning my-1" type="button" onclick="operator('/')">/</button>
+                    <button class="btn btn-lg btn-info my-1" type="button" onclick="equal()">=</button>
+                    <button class="btn btn-lg btn-danger my-1" type="button" onclick="reset()">RESET</button>
+                    <button class="btn btn-lg btn-danger my-1" type="button" onclick="clear()">CLEAR</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="calculator.js"></script>
+    </body>
+</html>
